@@ -1,3 +1,6 @@
+body{
+  background: #61dafb;
+}
 .App {
   text-align: center;
 }
@@ -18,8 +21,14 @@
   color: white;
 }
 
+.App-intro{
+  background: orangered;
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
+  animation: App-logo-spin infinite 20s linear;
 }
 
 @keyframes App-logo-spin {
