@@ -28,3 +28,15 @@ const Body = (props) => {
 
 
 export default Body;
+export const Body2 = () => (
+    <div>
+        <div>Hi</div>
+    </div>
+);
+export const Body3 = () => (
+    <div>
+        <div>Bye</div>
+    </div>
+);
+
+//functions can not have states, thats why they are called stateless functions.... when a state is needed in your component you use a class componenet rather than stateless function 

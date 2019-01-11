@@ -39,3 +39,11 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.visible {
+  background-color: #c9d30e; 
+}
+
+.hidden {
+  display:  none;
+}
