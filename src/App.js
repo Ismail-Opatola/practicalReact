@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import MyForm from './components/MyForm';
+// import MyForm from './components/MyForm';
 // import ImageSlider from './components/ImageSlider';
 // import Body, { Body2, Body3 } from './components/Body';
 // import Header from './components/Header';
 // import Counter from './components/Counter';
 
 import './App.css';
+import ValidationForm from './components/ValidationForm';
 
 // class App extends Component {
 //   addFunc(a,b){
@@ -182,6 +183,25 @@ import './App.css';
 //----------------------------------------------
 // How FORMS work in React
 
+// class App extends Component {
+//   state = {
+//     visible: true
+//   };
+
+//   render() {
+//     return (
+//       <div className="App">
+//         <MyForm />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+//----------------------------------------------
+// How Validation FORM work in React
+
 class App extends Component {
   state = {
     visible: true
@@ -190,7 +210,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MyForm />
+        <ValidationForm />
       </div>
     );
   }
