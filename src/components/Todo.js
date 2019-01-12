@@ -13,3 +13,6 @@ export default props => (
     <button onClick={props.onDelete}>x</button>
   </div>
 );
+
+
+// App is live on sureg : http://rampant-texture.surge.sh/

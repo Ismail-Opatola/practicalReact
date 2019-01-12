@@ -282,7 +282,7 @@ import TodoList from './components/TodoList';
 
 //----------------------------------------------
 // TodoMVC
-
+// App is live on sureg : http://rampant-texture.surge.sh/
 class App extends Component {
   state = {
     count: 0
@@ -299,7 +299,7 @@ class App extends Component {
       count: this.state.count - 1
     });
   };
-  
+
   render() {
     return (
       <div className="App">
