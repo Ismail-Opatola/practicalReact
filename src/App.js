@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+// import FetchRandomUser from './components/FetchRandomUser';
+// import ValidationForm from './components/ValidationForm';
 // import MyForm from './components/MyForm';
 // import ImageSlider from './components/ImageSlider';
 // import Body, { Body2, Body3 } from './components/Body';
@@ -6,7 +8,7 @@ import React, { Component } from 'react';
 // import Counter from './components/Counter';
 
 import './App.css';
-import ValidationForm from './components/ValidationForm';
+import TodoList from './components/TodoList';
 
 // class App extends Component {
 //   addFunc(a,b){
@@ -202,21 +204,109 @@ import ValidationForm from './components/ValidationForm';
 //----------------------------------------------
 // How Validation FORM work in React
 
+// class App extends Component {
+//   state = {
+//     visible: true
+//   };
+
+//   render() {
+//     return (
+//       <div className="App">
+//         <ValidationForm />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+//----------------------------------------------
+// Fetch data in React using RandomUser API and display on our website
+//https://api.randomuser.me 
+
+// class App extends Component {
+//   state = {
+//     visible: true
+//   };
+
+//   render() {
+//     return (
+//       <div className="App">
+//         <FetchRandomUser />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+//----------------------------------------------
+// Lifting State Up
+// meaning to move its state from the Counter Component to inside of its parent Component which is the App Component
+// usefull whenever you want to communicate btw two components
+
+// class App extends Component {
+//   state = {
+//     count: 0
+//   };
+
+//   increament = () => {
+//       this.setState({
+//           count: this.state.count + 1
+//       });
+//   };
+
+//   decreament = () => {
+//       this.setState({
+//           count: this.state.count - 1
+//       });
+//   };
+
+//   render() {
+//     return (
+//       <div className="App">
+//           <Counter 
+//             count={this.state.count}  
+//             increament={this.increament} 
+//             decreament={this.decreament}/>
+//           <Counter 
+//             count={this.state.count}  
+//             increament={this.increament} 
+//             decreament={this.decreament}/>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+//----------------------------------------------
+// TodoMVC
+
 class App extends Component {
   state = {
-    visible: true
+    count: 0
   };
 
+  increament = () => {
+    this.setState({
+      count: this.state.count + 1
+    });
+  };
+
+  decreament = () => {
+    this.setState({
+      count: this.state.count - 1
+    });
+  };
+  
   render() {
     return (
       <div className="App">
-        <ValidationForm />
+          <TodoList />
       </div>
     );
   }
 }
 
 export default App;
-
-
-// 
