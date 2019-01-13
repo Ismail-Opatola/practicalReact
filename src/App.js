@@ -282,7 +282,10 @@ import TodoList from './components/TodoList';
 
 //----------------------------------------------
 // TodoMVC
-// App is live on sureg : http://rampant-texture.surge.sh/
+// App is live on 
+// Surge : http://rampant-texture.surge.sh/
+// Netlify: https://nifty-euler-9fc478.netlify.com/
+
 class App extends Component {
   state = {
     count: 0

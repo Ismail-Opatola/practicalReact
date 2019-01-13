@@ -135,4 +135,6 @@ export default class TodoList extends Component {
 
 // .some loops through and as soon as it finds one Complete its gonna return
 
-// App is live on sureg : http://rampant-texture.surge.sh/
+// App is live on 
+// Surge : http://rampant-texture.surge.sh/
+// Netlify: https://nifty-euler-9fc478.netlify.com/
